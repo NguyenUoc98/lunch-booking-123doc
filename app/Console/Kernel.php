@@ -25,7 +25,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command(\Spatie\ModelCleanup\Commands\CleanUpModelsCommand::class)->daily();
-        $schedule->command('lunch:book')->dailyAt('9:00');
+        $schedule->command('lunch:book')->hourly()->between('8:00', '13:00');
     }
 
     /**

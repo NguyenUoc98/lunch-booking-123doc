@@ -64,7 +64,7 @@ class LunchBooking extends Command
             if ($staff->isBookToday() != Staff::statusBook['BOOK_SUCCESS']) {
                 $this->info("Start book lunch for staff $staff->full_name");
                 try {
-                    $user = new User($staff->username, $staff->password, $staff->position ?: '', null, true);
+                    $user = new User($staff->username, $staff->password, $staff->position ?: '', $staff->company ?: '', null, true);
                     $page = $user->login();
                     if ($user->book_lunch($page)){
                         $staff->bookingLogs()->create([
