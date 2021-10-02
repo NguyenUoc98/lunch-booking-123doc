@@ -20,6 +20,6 @@ class BookingLog extends Model implements GetsCleanedUp
 
     public function cleanUp(CleanupConfig $config): void
     {
-        $config->olderThanDays(6);
+        $config->olderThanDays(1);
     }
 }
