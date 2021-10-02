@@ -49,6 +49,6 @@ class BookLunch extends AbstractAction
 
     public function shouldActionDisplayOnRow($row)
     {
-        return $row->isBookToday() != Staff::statusBook['BOOK_SUCCESS'];
+        return ($row->isBookToday() != Staff::statusBook['BOOK_SUCCESS']) && ($row->is_active);
     }
 }
