@@ -11,6 +11,7 @@
         "laravel/framework": "^8.54",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
+        "nguyenhiep/laravel-directory-cleanup": "^1.8",
         "nguyenhiep/lunch_booking": "dev-master",
         "spatie/laravel-model-cleanup": "^3.2",
         "tcg/voyager": "^1.5"

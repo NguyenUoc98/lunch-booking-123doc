@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70111a0df919de20daf0cb6701edfd51",
+    "content-hash": "39c154999b535b89de8870dc1e6048f1",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -2729,6 +2729,78 @@
                 "source": "https://github.com/nette/utils/tree/v3.2.5"
             },
             "time": "2021-09-20T10:50:11+00:00"
+        },
+        {
+            "name": "nguyenhiep/laravel-directory-cleanup",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenhiepvan/laravel-directory-cleanup.git",
+                "reference": "85c14cf22254454da241cd64bbbaa2cdfad225cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenhiepvan/laravel-directory-cleanup/zipball/85c14cf22254454da241cd64bbbaa2cdfad225cf",
+                "reference": "85c14cf22254454da241cd64bbbaa2cdfad225cf",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "nesbot/carbon": "^2.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\DirectoryCleanup\\DirectoryCleanupServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\DirectoryCleanup\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jolita Grazyte",
+                    "email": "jolita@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This package will remove the expired files from the given directories. ",
+            "homepage": "https://github.com/spatie/laravel-directory-cleanup",
+            "keywords": [
+                "laravel-directory-cleanup",
+                "spatie"
+            ],
+            "support": {
+                "source": "https://github.com/nguyenhiepvan/laravel-directory-cleanup/tree/1.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2021-01-15T15:52:27+00:00"
         },
         {
             "name": "nguyenhiep/lunch_booking",
