@@ -100,6 +100,7 @@ class LunchBooking extends Command
                     }
                 }
             }
+            sleep(10);
         }
         return 1;
     }
