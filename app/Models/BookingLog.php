@@ -5,8 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\ModelCleanup\CleanupConfig;
+use Spatie\ModelCleanup\GetsCleanedUp;
 
-class BookingLog extends Model
+class BookingLog extends Model implements GetsCleanedUp
 {
     protected $fillable= ['status'];
 
